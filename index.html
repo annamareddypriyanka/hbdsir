@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honoring Our HOD Sir</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #1a1a2e, #16213e);
+      color: white;
+      overflow-x: hidden;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .typed-cursor {
+      color: #FFD700;
+      font-weight: bold;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 1rem;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .floating-balloons {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .floating-balloons span {
+      position: absolute;
+      bottom: -100px;
+      font-size: 3rem;
+      animation: float 10s linear infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh) translateX(0); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-10vh) translateX(20vw); opacity: 0; }
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    confetti({ particleCount: 200, spread: 100, origin: { y: 0.6 } });
+  </script>
+
+  <div class="floating-balloons">
+    <span style="left:10%">🎈</span>
+    <span style="left:30%">🎈</span>
+    <span style="left:50%">🎈</span>
+    <span style="left:70%">🎈</span>
+    <span style="left:90%">🎈</span>
+  </div>
+
+  <section class="min-h-screen flex items-center justify-center px-6 text-center relative z-10">
+    <div>
+      <h1 class="text-5xl md:text-6xl font-playfair mb-4">🎉 Happy Birthday, <span class="text-yellow-400"> Sir</span></h1>
+      <h2 id="typed-text" class="text-xl md:text-2xl text-gray-300"></h2>
+      <p class="mt-4 text-gray-400 max-w-2xl mx-auto">Your leadership inspires excellence and compassion. On your special day, we extend our deepest gratitude and warmest wishes. May your year ahead be as wonderful as your guidance has been for us all.</p>
+    </div>
+  </section>
+
+  <section class="bg-yellow-100 text-black py-2 text-center text-lg font-semibold animate-pulse">
+    <marquee behavior="scroll" direction="left">“The influence of a great educator can never be erased.” — Happy Birthday Sir!</marquee>
+  </section>
+
+
+  <section class="py-20 bg-black">
+    <h2 class="text-4xl text-center mb-10 font-semibold">🎠 Student Memories Carousel</h2>
+    <div class="swiper max-w-5xl mx-auto px-6">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide glass p-6 text-center">"Thank you sir for guiding us like a true light house."</div>
+        <div class="swiper-slide glass p-6 text-center">"Your energy in every lecture made learning a joy!"</div>
+        <div class="swiper-slide glass p-6 text-center">"We will never forget your motivation before placements."</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-gradient-to-b from-gray-900 to-black">
+    <h2 class="text-4xl text-center mb-10 font-semibold">📸 Cherished Memories</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-10">
+      <img src="IMG_0566.JPG" style="width: 300px; height: 300px; object-fit: cover;" class="rounded-xl transform hover:scale-105 transition duration-500 shadow-xl" alt="Memory 1">
+      <img src="IMG_6975.png" style="width: 300px; height: 300px; object-fit: cover;" class="rounded-xl transform hover:scale-105 transition duration-500 shadow-xl" alt="Memory 2">
+      <img src="IMG_0566.JPG" style="width: 300px; height: 300px; object-fit: cover;" class="rounded-xl transform hover:scale-105 transition duration-500 shadow-xl" alt="Memory 3">
+        <img src="IMG-20250201-WA0024 (1).jpg" style="width: 300px; height: 300px; object-fit: cover;" class="rounded-xl transform hover:scale-105 transition duration-500 shadow-xl" alt="Memory 3">
+          <img src="Screenshot 2025-08-04 193528.png" style="width: 300px; height: 300px; object-fit: cover;" class="rounded-xl transform hover:scale-105 transition duration-500 shadow-xl" alt="Memory 3">
+            <img src="IMG_5115.JPG" style="width: 300px; height: 300px; object-fit: cover;" class="rounded-xl transform hover:scale-105 transition duration-500 shadow-xl" alt="Memory 3">
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl text-center mb-10 font-bold font-playfair">🕰️ Milestones & Legacy</h2>
+      <div class="max-w-4xl mx-auto space-y-12">
+        <article class="timeline-item glass p-6">
+          <h3 class="text-2xl font-bold text-yellow-300">2004 – 2008: Senior Lecturer & Placement Officer</h3>
+          <p class="text-gray-300 mt-2 text-lg">Started the journey at R.M.D Engineering college, shaping students' futures both in and out of the classroom.</p>
+        </article>
+        <article class="timeline-item glass p-6">
+          <h3 class="text-2xl font-bold text-yellow-300">2009 – 2018: Assistant Professor</h3>
+          <p class="text-gray-300 mt-2 text-lg">A decade of dedication at Aalimm Muhammmed Salegh College of Engineering, inspiring countless students in the Department of CSE.</p>
+        </article>
+        <article class="timeline-item glass p-6">
+          <h3 class="text-2xl font-bold text-yellow-300">2010 – 2015: Research Scholar</h3>
+          <p class="text-gray-300 mt-2 text-lg">A period of deep academic contribution, pursuing research at Anna University that would later influence his teaching and leadership.</p>
+        </article>
+        <article class="timeline-item glass p-6">
+          <h3 class="text-2xl font-bold text-yellow-300">2018 – 2020: Associate Professor</h3>
+          <p class="text-gray-300 mt-2 text-lg">Joined K L University, bringing a wealth of experience and knowledge to new generations of learners.</p>
+        </article>
+        <article class="timeline-item glass p-6">
+          <h3 class="text-2xl font-bold text-yellow-300">2020 – 2022: Associate Professor and Head</h3>
+          <p class="text-gray-300 mt-2 text-lg">A significant milestone: stepping into the role of HOD at Amrita College of Engineering and Technology, leading the department with vision and purpose.</p>
+        </article>
+        <article class="timeline-item glass p-6">
+          <h3 class="text-2xl font-bold text-yellow-300">2022 – Present: Professor</h3>
+          <p class="text-gray-300 mt-2 text-lg">Returning to K L University as a full-time Professor, continuing to inspire and innovate in the field of Computer Science and Engineering.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-gradient-to-t from-gray-900 to-black">
+    <h2 class="text-4xl text-center mb-10 font-semibold">💬 Words from Students</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto px-6">
+      <div class="glass p-6">
+        <p class="text-lg">“Your kindness and vision helped me become who I am today.”</p>
+        
+      </div>
+      <div class="glass p-6">
+        <p class="text-lg">“You lead not with authority, but with wisdom and humility.”</p>
+      
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 text-center">
+    <h2 class="text-3xl mb-6 font-semibold">🖋️ With Gratitude</h2>
+    <p class="text-gray-400 mb-4">Signed with respect and admiration by all your students.</p>
+    
+  </section>
+
+  <footer class="py-10 text-center text-gray-500 text-sm">
+    <p>Designed with love and respect by your student ❤️</p>
+  </footer>
+
+  <script>
+    new Typed('#typed-text', {
+      strings: ["A Mentor.", "A Visionary.", "A Role Model.", "Our Guiding Light."],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: { el: '.swiper-pagination' },
+      autoplay: { delay: 2500, disableOnInteraction: false }
+    });
+  </script>
+</body>
+
+</html>
